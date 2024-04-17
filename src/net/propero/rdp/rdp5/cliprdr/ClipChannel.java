@@ -100,7 +100,7 @@ public class ClipChannel extends VChannel implements ClipInterface,
 		allHandlers.add(new UnicodeHandler());
 		allHandlers.add(new TextHandler());
 		allHandlers.add(new DIBHandler());
-		// allHandlers.add(new MetafilepictHandler());
+		//allHandlers.add(new MetafilepictHandler());
 	}
 
 	/*
