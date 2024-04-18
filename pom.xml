@@ -37,11 +37,11 @@
     </dependencies>
     <build>
         <sourceDirectory>src</sourceDirectory>
-        <resources>
+        <!--<resources>
             <resource>
                 <directory>keymaps</directory>
             </resource>
-        </resources>
+        </resources>-->
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -59,9 +59,27 @@
                             </sources>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>add-resource</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>add-resource</goal>
+                        </goals>
+                        <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>keymaps</directory>
+                                    <targetPath>keymaps</targetPath>
+                                    <!--<excludes>
+                                        <exclude>**/junk/**</exclude>
+                                    </excludes>-->
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.0.2</version>
@@ -74,7 +92,7 @@
                         </resource>
                     </resources>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
     <repositories>
