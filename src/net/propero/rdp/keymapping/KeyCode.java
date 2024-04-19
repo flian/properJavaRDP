@@ -1,31 +1,31 @@
 /* KeyCode.java
  * Component: ProperJavaRDP
- * 
+ *
  * Revision: $Revision: #2 $
  * Author: $Author: tvkelley $
  * Date: $Date: 2009/09/15 $
  *
  * Copyright (c) 2005 Propero Limited
  *
- * Purpose: 
- * 
+ * Purpose:
+ *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or (at
  * your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
  * USA
- * 
+ *
  * (See gpl.txt for details of the GNU General Public License.)
- * 
+ *
  */
 package net.propero.rdp.keymapping;
 
@@ -45,7 +45,7 @@ public class KeyCode {
 			"5%", "6^", "7&", "8*", "9(", "0)", "-_", "=+", "qQ", "wW", "eE",
 			"rR", "tT", "yY", "uU", "iI", "oO", "pP", "[{", "]}", "aA", "sS",
 			"dD", "fF", "gG", "hH", "jJ", "kK", "lL", ";:", "''\"", // added '
-																	// to \"
+			// to \"
 			"\\|", "zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",<", ".>", "/?" };
 
 	/** * United States keyboard layout (phantom key version) */
@@ -59,106 +59,106 @@ public class KeyCode {
 	};
 
 	/** * British keyboard layout */
-	private static final String[] main_key_UK = { "`¬|", "1!", "2\"", "3£",
-			"4$¤", "5%", "6^", "7&", "8*", "9(", "0)", "-_", "=+", "qQ", "wW",
+	private static final String[] main_key_UK = { "`Â¬|", "1!", "2\"", "3Â£",
+			"4$Â¤", "5%", "6^", "7&", "8*", "9(", "0)", "-_", "=+", "qQ", "wW",
 			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "[{", "]}", "aA",
 			"sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", ";:", "'@", "#~",
 			"zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",<", ".>", "/?", "\\|" };
 
 	/** * French keyboard layout (contributed by Eric Pouech) */
-	private static final String[] main_key_FR = { "²", "&1", "é2~", "\"3#",
-			"'4{", "(5[", "-6|", "è7", "_8\\", "ç9^±", "à0@", ")°]", "=+}",
-			"aA", "zZ", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "^¨",
-			"$£¤", "qQ", "sSß", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "mM",
-			"ù%", "*µ", "wW", "xX", "cC", "vV", "bB", "nN", ",?", ";.", ":/",
-			"!§", "<>" };
+	private static final String[] main_key_FR = { "Â²", "&1", "Ã©2~", "\"3#",
+			"'4{", "(5[", "-6|", "Ã¨7", "_8\\", "Ã§9^Â±", "Ã 0@", ")Â°]", "=+}",
+			"aA", "zZ", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "^Â¨",
+			"$Â£Â¤", "qQ", "sSÃŸ", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "mM",
+			"Ã¹%", "*Âµ", "wW", "xX", "cC", "vV", "bB", "nN", ",?", ";.", ":/",
+			"!Â§", "<>" };
 
-	/** * Icelandic keyboard layout (contributed by Ríkharğur Egilsson) */
-	private static final String[] main_key_IS = { "°", "1!", "2\"", "3#", "4$",
-			"5%", "6&", "7/{", "8([", "9)]", "0=}", "öÖ\\", "-_", "qQ@", "wW",
-			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "ğĞ", "'?~", "aA",
-			"sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "æÆ", "´^", "+*`",
-			"zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "şŞ", "<>|" };
+	/** * Icelandic keyboard layout (contributed by RÃ­kharÃ°ur Egilsson) */
+	private static final String[] main_key_IS = { "Â°", "1!", "2\"", "3#", "4$",
+			"5%", "6&", "7/{", "8([", "9)]", "0=}", "Ã¶Ã–\\", "-_", "qQ@", "wW",
+			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "Ã°Ã", "'?~", "aA",
+			"sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã¦Ã†", "Â´^", "+*`",
+			"zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "Ã¾Ã", "<>|" };
 
 	/** * German keyboard layout (contributed by Ulrich Weigand) */
-	private static final String[] main_key_DE = { "^°", "1!", "2\"²", "3§³",
-			"4$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "ß?\\", "'`", "qQ@",
-			"wW", "eE€", "rR", "tT", "zZ", "uU", "iI", "oO", "pP", "üÜ", "+*~",
-			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "öÖ", "äÄ",
-			"#´", "yY", "xX", "cC", "vV", "bB", "nN", "mMµ", ",;", ".:", "-_",
+	private static final String[] main_key_DE = { "^Â°", "1!", "2\"Â²", "3Â§Â³",
+			"4$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "ÃŸ?\\", "'`", "qQ@",
+			"wW", "eEÂ€", "rR", "tT", "zZ", "uU", "iI", "oO", "pP", "Ã¼Ãœ", "+*~",
+			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã¶Ã–", "Ã¤Ã„",
+			"#Â´", "yY", "xX", "cC", "vV", "bB", "nN", "mMÂµ", ",;", ".:", "-_",
 			"<>|" };
 
 	/** * German keyboard layout without dead keys */
-	private static final String[] main_key_DE_nodead = { "^°", "1!", "2\"",
-			"3§", "4$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "ß?\\", "´",
-			"qQ", "wW", "eE", "rR", "tT", "zZ", "uU", "iI", "oO", "pP", "üÜ",
-			"+*~", "aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "öÖ",
-			"äÄ", "#'", "yY", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:",
+	private static final String[] main_key_DE_nodead = { "^Â°", "1!", "2\"",
+			"3Â§", "4$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "ÃŸ?\\", "Â´",
+			"qQ", "wW", "eE", "rR", "tT", "zZ", "uU", "iI", "oO", "pP", "Ã¼Ãœ",
+			"+*~", "aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã¶Ã–",
+			"Ã¤Ã„", "#'", "yY", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:",
 			"-_", "<>" };
 
 	/** * Swiss German keyboard layout (contributed by Jonathan Naylor) */
-	private static final String[] main_key_SG = { "§°", "1+|", "2\"@", "3*#",
-			"4ç", "5%", "6&¬", "7/¦", "8(¢", "9)", "0=", "'?´", "^`~", "qQ",
-			"wW", "eE", "rR", "tT", "zZ", "uU", "iI", "oO", "pP", "üè[", "¨!]",
-			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "öé", "äà{",
-			"$£}", "yY", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "-_",
+	private static final String[] main_key_SG = { "Â§Â°", "1+|", "2\"@", "3*#",
+			"4Ã§", "5%", "6&Â¬", "7/Â¦", "8(Â¢", "9)", "0=", "'?Â´", "^`~", "qQ",
+			"wW", "eE", "rR", "tT", "zZ", "uU", "iI", "oO", "pP", "Ã¼Ã¨[", "Â¨!]",
+			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã¶Ã©", "Ã¤Ã {",
+			"$Â£}", "yY", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "-_",
 			"<>\\" };
 
 	/** * Swiss French keyboard layout (contributed by Philippe Froidevaux) */
-	private static final String[] main_key_SF = { "§°", "1+|", "2\"@", "3*#",
-			"4ç", "5%", "6&¬", "7/¦", "8(¢", "9)", "0=", "'?´", "^`~", "qQ",
-			"wW", "eE", "rR", "tT", "zZ", "uU", "iI", "oO", "pP", "èü[", "¨!]",
-			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "éö", "àä{",
-			"$£}", "yY", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "-_",
+	private static final String[] main_key_SF = { "Â§Â°", "1+|", "2\"@", "3*#",
+			"4Ã§", "5%", "6&Â¬", "7/Â¦", "8(Â¢", "9)", "0=", "'?Â´", "^`~", "qQ",
+			"wW", "eE", "rR", "tT", "zZ", "uU", "iI", "oO", "pP", "Ã¨Ã¼[", "Â¨!]",
+			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã©Ã¶", "Ã Ã¤{",
+			"$Â£}", "yY", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "-_",
 			"<>\\" };
 
-	/** * Norwegian keyboard layout (contributed by Ove Kåven) */
-	private static final String[] main_key_NO = { "|§", "1!", "2\"@", "3#£",
-			"4¤$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "+?", "\\`´", "qQ",
-			"wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "åÅ", "¨^~",
-			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "øØ", "æÆ",
+	/** * Norwegian keyboard layout (contributed by Ove KÃ¥ven) */
+	private static final String[] main_key_NO = { "|Â§", "1!", "2\"@", "3#Â£",
+			"4Â¤$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "+?", "\\`Â´", "qQ",
+			"wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "Ã¥Ã…", "Â¨^~",
+			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã¸Ã˜", "Ã¦Ã†",
 			"'*", "zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "-_",
 			"<>" };
 
 	/** * Danish keyboard layout (contributed by Bertho Stultiens) */
-	private static final String[] main_key_DA = { "½§", "1!", "2\"@", "3#£",
-			"4¤$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "+?", "´`|", "qQ",
-			"wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "åÅ", "¨^~",
-			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "æÆ", "øØ",
+	private static final String[] main_key_DA = { "Â½Â§", "1!", "2\"@", "3#Â£",
+			"4Â¤$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "+?", "Â´`|", "qQ",
+			"wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "Ã¥Ã…", "Â¨^~",
+			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã¦Ã†", "Ã¸Ã˜",
 			"'*", "zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "-_",
 			"<>\\" };
 
 	/** * Swedish keyboard layout (contributed by Peter Bortas) */
-	private static final String[] main_key_SE = { "§½", "1!", "2\"@", "3#£",
-			"4¤$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "+?\\", "´`", "qQ",
-			"wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "åÅ", "¨^~",
-			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "öÖ", "äÄ",
+	private static final String[] main_key_SE = { "Â§Â½", "1!", "2\"@", "3#Â£",
+			"4Â¤$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "+?\\", "Â´`", "qQ",
+			"wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "Ã¥Ã…", "Â¨^~",
+			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã¶Ã–", "Ã¤Ã„",
 			"'*", "zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "-_",
 			"<>|" };
 
 	/** * Canadian French keyboard layout */
-	private static final String[] main_key_CF = { "#|\\", "1!±", "2\"@", "3/£",
-			"4$¢", "5%¤", "6?¬", "7&¦", "8*²", "9(³", "0)¼", "-_½", "=+¾",
-			"qQ", "wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO§", "pP¶",
-			"^^[", "¸¨]", "aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL",
+	private static final String[] main_key_CF = { "#|\\", "1!Â±", "2\"@", "3/Â£",
+			"4$Â¢", "5%Â¤", "6?Â¬", "7&Â¦", "8*Â²", "9(Â³", "0)Â¼", "-_Â½", "=+Â¾",
+			"qQ", "wW", "eE", "rR", "tT", "yY", "uU", "iI", "oOÂ§", "pPÂ¶",
+			"^^[", "Â¸Â¨]", "aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL",
 			";:~", "``{", "<>}", "zZ", "xX", "cC", "vV", "bB", "nN", "mM",
-			",'-", ".", "éÉ", "«»°" };
+			",'-", ".", "Ã©Ã‰", "Â«Â»Â°" };
 
 	/** * Portuguese keyboard layout */
-	private static final String[] main_key_PT = { "\\¦", "1!", "2\"@", "3#£",
-			"4$§", "5%", "6&", "7/{", "8([", "9)]", "0=}", "'?", "«»", "qQ",
-			"wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "+*\\¨",
+	private static final String[] main_key_PT = { "\\Â¦", "1!", "2\"@", "3#Â£",
+			"4$Â§", "5%", "6&", "7/{", "8([", "9)]", "0=}", "'?", "Â«Â»", "qQ",
+			"wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "+*\\Â¨",
 			"\\'\\`", "aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL",
-			"çÇ", "ºª", "\\~\\^", "zZ", "xX", "cC", "vV", "bB", "nN", "mM",
+			"Ã§Ã‡", "ÂºÂª", "\\~\\^", "zZ", "xX", "cC", "vV", "bB", "nN", "mM",
 			",;", ".:", "-_", "<>" };
 
 	/** * Italian keyboard layout */
-	private static final String[] main_key_IT = { "\\|", "1!¹", "2\"²", "3£³",
-			"4$¼", "5%½", "6&¾", "7/{", "8([", "9)]", "0=}", "'?`", "ì^~",
-			"qQ@", "wW", "eE", "rR", "tT", "yY", "uU", "iI", "oOø", "pPş",
-			"èé[", "+*]", "aA", "sSß", "dDğ", "fF", "gG", "hH", "jJ", "kK",
-			"lL", "òç@", "à°#", "ù§", "zZ", "xX", "cC", "vV", "bB", "nN",
-			"mMµ", ",;", ".:·", "-_", "<>|" };
+	private static final String[] main_key_IT = { "\\|", "1!Â¹", "2\"Â²", "3Â£Â³",
+			"4$Â¼", "5%Â½", "6&Â¾", "7/{", "8([", "9)]", "0=}", "'?`", "Ã¬^~",
+			"qQ@", "wW", "eE", "rR", "tT", "yY", "uU", "iI", "oOÃ¸", "pPÃ¾",
+			"Ã¨Ã©[", "+*]", "aA", "sSÃŸ", "dDÃ°", "fF", "gG", "hH", "jJ", "kK",
+			"lL", "Ã²Ã§@", "Ã Â°#", "Ã¹Â§", "zZ", "xX", "cC", "vV", "bB", "nN",
+			"mMÂµ", ",;", ".:Â·", "-_", "<>|" };
 
 	/** * Finnish keyboard layout */
 	private static final String[] main_key_FI = { "", "1!", "2\"@", "3#", "4$",
@@ -169,67 +169,67 @@ public class KeyCode {
 
 	/** * Russian keyboard layout (contributed by Pavel Roskin) */
 	private static final String[] main_key_RU = { "`~", "1!", "2@", "3#", "4$",
-			"5%", "6^", "7&", "8*", "9(", "0)", "-_", "=+", "qQÊê", "wWÃã",
-			"eEÕõ", "rRËë", "tTÅå", "yYÎî", "uUÇç", "iIÛû", "oOİı", "pPÚú",
-			"[{Èè", "]}ßÿ", "aAÆæ", "sSÙù", "dD×÷", "fFÁá", "gGĞğ", "hHÒò",
-			"jJÏï", "kKÌì", "lLÄä", ";:Öö", "'\"Üü", "\\|", "zZÑñ", "xXŞş",
-			"cCÓó", "vVÍí", "bBÉé", "nNÔô", "mMØø", ",<Ââ", ".>Àà", "/?" };
+			"5%", "6^", "7&", "8*", "9(", "0)", "-_", "=+", "qQÃŠÃª", "wWÃƒÃ£",
+			"eEÃ•Ãµ", "rRÃ‹Ã«", "tTÃ…Ã¥", "yYÃÃ®", "uUÃ‡Ã§", "iIÃ›Ã»", "oOÃÃ½", "pPÃšÃº",
+			"[{ÃˆÃ¨", "]}ÃŸÃ¿", "aAÃ†Ã¦", "sSÃ™Ã¹", "dDÃ—Ã·", "fFÃÃ¡", "gGÃÃ°", "hHÃ’Ã²",
+			"jJÃÃ¯", "kKÃŒÃ¬", "lLÃ„Ã¤", ";:Ã–Ã¶", "'\"ÃœÃ¼", "\\|", "zZÃ‘Ã±", "xXÃÃ¾",
+			"cCÃ“Ã³", "vVÃÃ­", "bBÃ‰Ã©", "nNÃ”Ã´", "mMÃ˜Ã¸", ",<Ã‚Ã¢", ".>Ã€Ã ", "/?" };
 
 	/** * Russian keyboard layout KOI8-R */
 	private static final String[] main_key_RU_koi8r = { "()", "1!", "2\"",
-			"3/", "4$", "5:", "6,", "7.", "8;", "9?", "0%", "-_", "=+", "Êê",
-			"Ãã", "Õõ", "Ëë", "Åå", "Îî", "Çç", "Ûû", "İı", "Úú", "Èè", "ßÿ",
-			"Ææ", "Ùù", "×÷", "Áá", "Ğğ", "Òò", "Ïï", "Ìì", "Ää", "Öö", "Üü",
-			"\\|", "Ññ", "Şş", "Óó", "Íí", "Éé", "Ôô", "Øø", "Ââ", "Àà", "/?",
+			"3/", "4$", "5:", "6,", "7.", "8;", "9?", "0%", "-_", "=+", "ÃŠÃª",
+			"ÃƒÃ£", "Ã•Ãµ", "Ã‹Ã«", "Ã…Ã¥", "ÃÃ®", "Ã‡Ã§", "Ã›Ã»", "ÃÃ½", "ÃšÃº", "ÃˆÃ¨", "ÃŸÃ¿",
+			"Ã†Ã¦", "Ã™Ã¹", "Ã—Ã·", "ÃÃ¡", "ÃÃ°", "Ã’Ã²", "ÃÃ¯", "ÃŒÃ¬", "Ã„Ã¤", "Ã–Ã¶", "ÃœÃ¼",
+			"\\|", "Ã‘Ã±", "ÃÃ¾", "Ã“Ã³", "ÃÃ­", "Ã‰Ã©", "Ã”Ã´", "Ã˜Ã¸", "Ã‚Ã¢", "Ã€Ã ", "/?",
 			"<>" /* the phantom key */
 	};
 
-	/** * Spanish keyboard layout (contributed by José Marcos López) */
-	private static final String[] main_key_ES = { "ºª\\", "1!|", "2\"@", "3·#",
-			"4$", "5%", "6&¬", "7/", "8(", "9)", "0=", "'?", "¡¿", "qQ", "wW",
+	/** * Spanish keyboard layout (contributed by JosÃ© Marcos LÃ³pez) */
+	private static final String[] main_key_ES = { "ÂºÂª\\", "1!|", "2\"@", "3Â·#",
+			"4$", "5%", "6&Â¬", "7/", "8(", "9)", "0=", "'?", "Â¡Â¿", "qQ", "wW",
 			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "`^[", "+*]", "aA",
-			"sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "ñÑ", "'¨{", "çÇ}",
+			"sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã±Ã‘", "'Â¨{", "Ã§Ã‡}",
 			"zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "-_", "<>" };
 
 	/** * Belgian keyboard layout ** */
-	private static final String[] main_key_BE = { "", "&1|", "é2@", "\"3#",
-			"'4", "(5", "§6^", "è7", "!8", "ç9{", "à0}", ")°", "-_", "aA",
-			"zZ", "eE¤", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "^¨[",
-			"$*]", "qQ", "sSß", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "mM",
-			"ù%´", "µ£`", "wW", "xX", "cC", "vV", "bB", "nN", ",?", ";.", ":/",
+	private static final String[] main_key_BE = { "", "&1|", "Ã©2@", "\"3#",
+			"'4", "(5", "Â§6^", "Ã¨7", "!8", "Ã§9{", "Ã 0}", ")Â°", "-_", "aA",
+			"zZ", "eEÂ¤", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "^Â¨[",
+			"$*]", "qQ", "sSÃŸ", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "mM",
+			"Ã¹%Â´", "ÂµÂ£`", "wW", "xX", "cC", "vV", "bB", "nN", ",?", ";.", ":/",
 			"=+~", "<>\\" };
 
-	/** * Hungarian keyboard layout (contributed by Zoltán Kovács) */
-	private static final String[] main_key_HU = { "0§", "1'~", "2\"·", "3+^",
-			"4!¢", "5%°", "6/²", "7=`", "8(ÿ", "9)´", "öÖ½", "üÜ¨", "óÓ¸",
-			"qQ\\", "wW|", "eE", "rR", "tT", "zZ", "uU", "iIÍ", "oOø", "pP",
-			"õÕ÷", "úÚ×", "aA", "sSğ", "dDĞ", "fF[", "gG]", "hH", "jJí", "kK³",
-			"lL£", "éÉ$", "áÁß", "ûÛ¤", "yY>", "xX#", "cC&", "vV@", "bB{",
-			"nN}", "mM", ",?;", ".:·", "-_*", "íÍ<" };
+	/** * Hungarian keyboard layout (contributed by ZoltÃ¡n KovÃ¡cs) */
+	private static final String[] main_key_HU = { "0Â§", "1'~", "2\"Â·", "3+^",
+			"4!Â¢", "5%Â°", "6/Â²", "7=`", "8(Ã¿", "9)Â´", "Ã¶Ã–Â½", "Ã¼ÃœÂ¨", "Ã³Ã“Â¸",
+			"qQ\\", "wW|", "eE", "rR", "tT", "zZ", "uU", "iIÃ", "oOÃ¸", "pP",
+			"ÃµÃ•Ã·", "ÃºÃšÃ—", "aA", "sSÃ°", "dDÃ", "fF[", "gG]", "hH", "jJÃ­", "kKÂ³",
+			"lLÂ£", "Ã©Ã‰$", "Ã¡ÃÃŸ", "Ã»Ã›Â¤", "yY>", "xX#", "cC&", "vV@", "bB{",
+			"nN}", "mM", ",?;", ".:Â·", "-_*", "Ã­Ã<" };
 
 	/** * Polish (programmer's) keyboard layout ** */
 	private static final String[] main_key_PL = { "`~", "1!", "2@", "3#", "4$",
-			"5%", "6^", "7&§", "8*", "9(", "0)", "-_", "=+", "qQ", "wW",
-			"eEêÊ", "rR", "tT", "yY", "uU", "iI", "oOóÓ", "pP", "[{", "]}",
-			"aA±¡", "sS¶¦", "dD", "fF", "gG", "hH", "jJ", "kK", "lL³£", ";:",
-			"'\"", "\\|", "zZ¿¯", "xX¼¬", "cCæÆ", "vV", "bB", "nNñÑ", "mM",
+			"5%", "6^", "7&Â§", "8*", "9(", "0)", "-_", "=+", "qQ", "wW",
+			"eEÃªÃŠ", "rR", "tT", "yY", "uU", "iI", "oOÃ³Ã“", "pP", "[{", "]}",
+			"aAÂ±Â¡", "sSÂ¶Â¦", "dD", "fF", "gG", "hH", "jJ", "kK", "lLÂ³Â£", ";:",
+			"'\"", "\\|", "zZÂ¿Â¯", "xXÂ¼Â¬", "cCÃ¦Ã†", "vV", "bB", "nNÃ±Ã‘", "mM",
 			",<", ".>", "/?", "<>|" };
 
 	/** * Croatian keyboard layout specific for me <jelly@srk.fer.hr> ** */
 	private static final String[] main_key_HR_jelly = { "`~", "1!", "2@", "3#",
 			"4$", "5%", "6^", "7&", "8*", "9(", "0)", "-_", "=+", "qQ", "wW",
-			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "[{¹©", "]}ğĞ",
-			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", ";:èÈ",
-			"'\"æÆ", "\\|¾®", "zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",<",
+			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "[{Â¹Â©", "]}Ã°Ã",
+			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", ";:Ã¨Ãˆ",
+			"'\"Ã¦Ã†", "\\|Â¾Â®", "zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",<",
 			".>", "/?", "<>|" };
 
 	/** * Croatian keyboard layout ** */
-	private static final String[] main_key_HR = { "¸¨", "1!", "2\"·", "3#^",
-			"4$¢", "5%°", "6&²", "7/`", "8(ÿ", "9)´", "0=½", "'?¨", "+*¸",
+	private static final String[] main_key_HR = { "Â¸Â¨", "1!", "2\"Â·", "3#^",
+			"4$Â¢", "5%Â°", "6&Â²", "7/`", "8(Ã¿", "9)Â´", "0=Â½", "'?Â¨", "+*Â¸",
 			"qQ\\", "wW|", "eE", "rR", "tT", "zZ", "uU", "iI", "oO", "pP",
-			"¹©÷", "ğĞ×", "aA", "sS", "dD", "fF[", "gG]", "hH", "jJ", "kK³",
-			"lL£", "èÈ", "æÆß", "¾®¤", "yY", "xX", "cC", "vV@", "bB{", "nN}",
-			"mM§", ",;", ".:", "-_/", "<>" };
+			"Â¹Â©Ã·", "Ã°ÃÃ—", "aA", "sS", "dD", "fF[", "gG]", "hH", "jJ", "kKÂ³",
+			"lLÂ£", "Ã¨Ãˆ", "Ã¦Ã†ÃŸ", "Â¾Â®Â¤", "yY", "xX", "cC", "vV@", "bB{", "nN}",
+			"mMÂ§", ",;", ".:", "-_/", "<>" };
 
 	/** * Japanese 106 keyboard layout ** */
 	private static final String[] main_key_JA_jp106 = { "1!", "2\"", "3#",
@@ -251,7 +251,7 @@ public class KeyCode {
 	private static final String[] main_key_PT_br = { "'\"", "1!", "2@", "3#",
 			"4$", "5%", "6\"", "7&", "8*", "9(", "0)", "-_", "=+", "qQ", "wW",
 			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "'`", "[{", "aA",
-			"sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "çÇ", "~^", "]}",
+			"sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã§Ã‡", "~^", "]}",
 			"zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",<", ".>", "/?" };
 
 	/**
@@ -269,11 +269,11 @@ public class KeyCode {
 	 * dead_abovering replaced with degree - no symbol in iso8859-2 - brokenbar
 	 * replaced with bar
 	 */
-	private static final String[] main_key_SK = { ";°`'", "+1", "µ2", "¹3",
-			"è4", "»5", "¾6", "ı7", "á8", "í9", "é0)", "=%", "", "qQ\\", "wW|",
-			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "ú/÷", "ä(×", "aA",
-			"sSğ", "dDĞ", "fF[", "gG]", "hH", "jJ", "kK³", "lL£", "ô\"$",
-			"§!ß", "ò)¤", "zZ>", "xX#", "cC&", "vV@", "bB{", "nN}", "mM",
+	private static final String[] main_key_SK = { ";Â°`'", "+1", "Âµ2", "Â¹3",
+			"Ã¨4", "Â»5", "Â¾6", "Ã½7", "Ã¡8", "Ã­9", "Ã©0)", "=%", "", "qQ\\", "wW|",
+			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "Ãº/Ã·", "Ã¤(Ã—", "aA",
+			"sSÃ°", "dDÃ", "fF[", "gG]", "hH", "jJ", "kKÂ³", "lLÂ£", "Ã´\"$",
+			"Â§!ÃŸ", "Ã²)Â¤", "zZ>", "xX#", "cC&", "vV@", "bB{", "nN}", "mM",
 			",?<", ".:>", "-_*", "<>\\|" };
 
 	/**
@@ -281,39 +281,39 @@ public class KeyCode {
 	 * cssk_dual(cs_sk_ucw))
 	 */
 	private static final String[] main_key_SK_prog = { "`~", "1!", "2@", "3#",
-			"4$", "5%", "6^", "7&", "8*", "9(", "0)", "-_", "=+", "qQäÄ",
-			"wWìÌ", "eEéÉ", "rRøØ", "tT»«", "yYıİ", "uUùÙ", "iIíÍ", "oOóÓ",
-			"pPöÖ", "[{", "]}", "aAáÁ", "sS¹©", "dDïÏ", "fFëË", "gGàÀ", "hHúÚ",
-			"jJüÜ", "kKôÔ", "lLµ¥", ";:", "'\"", "\\|", "zZ¾®", "xX¤", "cCèÈ",
-			"vVçÇ", "bB", "nNòÒ", "mMåÅ", ",<", ".>", "/?", "<>" };
+			"4$", "5%", "6^", "7&", "8*", "9(", "0)", "-_", "=+", "qQÃ¤Ã„",
+			"wWÃ¬ÃŒ", "eEÃ©Ã‰", "rRÃ¸Ã˜", "tTÂ»Â«", "yYÃ½Ã", "uUÃ¹Ã™", "iIÃ­Ã", "oOÃ³Ã“",
+			"pPÃ¶Ã–", "[{", "]}", "aAÃ¡Ã", "sSÂ¹Â©", "dDÃ¯Ã", "fFÃ«Ã‹", "gGÃ Ã€", "hHÃºÃš",
+			"jJÃ¼Ãœ", "kKÃ´Ã”", "lLÂµÂ¥", ";:", "'\"", "\\|", "zZÂ¾Â®", "xXÂ¤", "cCÃ¨Ãˆ",
+			"vVÃ§Ã‡", "bB", "nNÃ²Ã’", "mMÃ¥Ã…", ",<", ".>", "/?", "<>" };
 
 	/** * Czech keyboard layout (see cssk_ibm(cs_qwerty) in xkbsel) */
-	private static final String[] main_key_CS = { ";", "+1", "ì2", "¹3", "è4",
-			"ø5", "¾6", "ı7", "á8", "í9", "é0½)", "=%", "", "qQ\\", "wW|",
-			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "ú/[{", ")(]}",
-			"aA", "sSğ", "dDĞ", "fF[", "gG]", "hH", "jJ", "kK³", "lL£", "ù\"$",
-			"§!ß", "¨'", "zZ>", "xX#", "cC&", "vV@", "bB{", "nN}", "mM", ",?<",
+	private static final String[] main_key_CS = { ";", "+1", "Ã¬2", "Â¹3", "Ã¨4",
+			"Ã¸5", "Â¾6", "Ã½7", "Ã¡8", "Ã­9", "Ã©0Â½)", "=%", "", "qQ\\", "wW|",
+			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "Ãº/[{", ")(]}",
+			"aA", "sSÃ°", "dDÃ", "fF[", "gG]", "hH", "jJ", "kKÂ³", "lLÂ£", "Ã¹\"$",
+			"Â§!ÃŸ", "Â¨'", "zZ>", "xX#", "cC&", "vV@", "bB{", "nN}", "mM", ",?<",
 			".:>", "-_*", "<>\\|" };
 
 	/** * Latin American keyboard layout (contributed by Gabriel Orlando Garcia) */
-	private static final String[] main_key_LA = { "|°¬", "1!", "2\"", "3#",
-			"4$", "5%", "6&", "7/", "8(", "9)", "0=", "'?\\", "¡¿", "qQ@",
-			"wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "´¨", "+*~",
-			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "ñÑ", "{[^",
+	private static final String[] main_key_LA = { "|Â°Â¬", "1!", "2\"", "3#",
+			"4$", "5%", "6&", "7/", "8(", "9)", "0=", "'?\\", "Â¡Â¿", "qQ@",
+			"wW", "eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "Â´Â¨", "+*~",
+			"aA", "sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã±Ã‘", "{[^",
 			"}]`", "zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",;", ".:", "-_",
 			"<>" };
 
-	/** * Lithuanian (Baltic) keyboard layout (contributed by Nerijus Baliûnas) */
-	private static final String[] main_key_LT_B = { "`~", "àÀ", "èÈ", "æÆ",
-			"ëË", "áÁ", "ğĞ", "øØ", "ûÛ", "((", "))", "-_", "şŞ", "qQ", "wW",
+	/** * Lithuanian (Baltic) keyboard layout (contributed by Nerijus BaliÃ»nas) */
+	private static final String[] main_key_LT_B = { "`~", "Ã Ã€", "Ã¨Ãˆ", "Ã¦Ã†",
+			"Ã«Ã‹", "Ã¡Ã", "Ã°Ã", "Ã¸Ã˜", "Ã»Ã›", "((", "))", "-_", "Ã¾Ã", "qQ", "wW",
 			"eE", "rR", "tT", "yY", "uU", "iI", "oO", "pP", "[{", "]}", "aA",
 			"sS", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", ";:", "'\"", "\\|",
 			"zZ", "xX", "cC", "vV", "bB", "nN", "mM", ",<", ".>", "/?" };
 
 	/** * Turkish keyboard Layout */
-	private static final String[] main_key_TK = { "\"é", "1!", "2'", "3^#",
+	private static final String[] main_key_TK = { "\"Ã©", "1!", "2'", "3^#",
 			"4+$", "5%", "6&", "7/{", "8([", "9)]", "0=}", "*?\\", "-_", "qQ@",
-			"wW", "eE", "rR", "tT", "yY", "uU", "ıIî", "oO", "pP", "ğĞ", "üÜ~",
-			"aAæ", "sSß", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "şŞ", "iİ",
-			",;`", "zZ", "xX", "cC", "vV", "bB", "nN", "mM", "öÖ", "çÇ", ".:" };
+			"wW", "eE", "rR", "tT", "yY", "uU", "Ã½IÃ®", "oO", "pP", "Ã°Ã", "Ã¼Ãœ~",
+			"aAÃ¦", "sSÃŸ", "dD", "fF", "gG", "hH", "jJ", "kK", "lL", "Ã¾Ã", "iÃ",
+			",;`", "zZ", "xX", "cC", "vV", "bB", "nN", "mM", "Ã¶Ã–", "Ã§Ã‡", ".:" };
 }
