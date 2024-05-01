@@ -1,9 +1,20 @@
-properJavaRDP
+#properJavaRDP
 
 Copyright (c) 2005 Propero Ltd <www.propero.net>
 
+fork from: https://github.com/bleehome/properJavaRDP
+
+## 修改说明
+1. 切换成maven项目。
+2. 依赖升级。（待完成）
+3. 启动命令添加 `--disk_device_map`
+
+我的另外一个项目使用了properJavaRDP,请参考：[javaWebSsh](https://github.com/flian/webssh)
+
 在原有的基础上修复一些bug
 
+
+## 其他说明
 使用说明：
 启动参数中加`--disk_device_map` 添加本地目录映射到远程桌面目录
 如:
