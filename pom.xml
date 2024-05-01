@@ -42,11 +42,6 @@
     </dependencies>
     <build>
         <sourceDirectory>src</sourceDirectory>
-        <!--<resources>
-            <resource>
-                <directory>keymaps</directory>
-            </resource>
-        </resources>-->
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -75,9 +70,6 @@
                                 <resource>
                                     <directory>keymaps</directory>
                                     <targetPath>keymaps</targetPath>
-                                    <!--<excludes>
-                                        <exclude>**/junk/**</exclude>
-                                    </excludes>-->
                                 </resource>
                             </resources>
                         </configuration>
@@ -89,7 +81,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
                     <archive>
-                        <!--生成的jar中，不要包含pom.xml和pom.properties这两个文件-->
+                        <!--生成的jar中，不要包含pom.xml和pom.properties这两个文件.痩包配置-->
                         <addMavenDescriptor>true</addMavenDescriptor>
                         <manifest>
                             <!--包含lib-->
@@ -100,7 +92,7 @@
                     </archive>
                 </configuration>
             </plugin>
-            <!-- 打包依赖到lib-->
+            <!-- 打包依赖到lib,痩包配置-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -118,20 +110,26 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.0.2</version>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
-                    <outputDirectory>keymaps</outputDirectory>
-                    <resources>
-                        <resource>
-                            <directory>keymaps</directory>
-                            <filtering>true</filtering>
-                        </resource>
-                    </resources>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest><mainClass>net.propero.rdp.Rdesktop</mainClass></manifest>
+                    </archive>
                 </configuration>
-            </plugin>-->
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
     <repositories>
