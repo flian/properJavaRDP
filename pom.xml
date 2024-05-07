@@ -5,7 +5,7 @@
 
     <groupId>net.propero.rdp</groupId>
     <artifactId>properJavaRDP</artifactId>
-    <version>0.1.18-SNAPSHOT</version>
+    <version>0.1.18</version>
     <name>properJavaRDP</name>
     <description>java rdp</description>
     <packaging>jar</packaging>
